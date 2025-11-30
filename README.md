@@ -33,11 +33,14 @@ The analysis is divided into four sequential notebooks. Please run them in the f
 ## Methodology & Tech Stack
 * **Language:** Python 3
 * **Libraries:** `pandas`, `numpy`, `scipy.stats`, `seaborn`, `matplotlib`, `statsmodels`, `scikit_posthocs`
-* **Statistical Methods:** * Shapiro-Wilk (Normality check)
-    * Spearman Rank Correlation (Robust to outliers)
-    * Benjamini-Hochberg FDR (Multiple testing correction)
-    * Kruskal-Wallis H-Test & Dunn's Test (Non-parametric ANOVA)
-    * Welch's t-Test (Comparing means with unequal variance)
+* **Statistical Methods:**
+* **Statistical Methods:**
+    * **Descriptive & Robust Diagnostics:** Mean, Median, IQR, Boxplots (VL 2A, VL 3).
+    * **Correlation Analysis:** Spearman Rank Correlation (Non-linear/Robust) & Scatterplots (VL 4).
+    * **Group Comparisons:** Kruskal-Wallis H-Test (Non-parametric ANOVA) & Dunn's Post-hoc Test with Bonferroni correction (VL 9).
+    * **Hypothesis Testing:** Welch's t-Test for independent samples (VL 7) & Chi-Square Test of Independence (VL 8).
+    * **Inference:** 95% Confidence Intervals for stability analysis (VL 6).
+    * **Significance Correction:** Benjamini-Hochberg FDR for multiple testing (VL 8).
 
 ## Usage
 1.  Ensure `data.csv` (raw IMF data) is in the root directory.
