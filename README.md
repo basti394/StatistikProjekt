@@ -5,6 +5,8 @@ This project performs a statistical deep dive into the **IMF World Economic Outl
 
 We move beyond simple visualizations to test economic theories (Okun's Law, Phillips Curve) and validate findings using rigorous hypothesis testing (Kruskal-Wallis, Chi-Square, t-Tests) and **Linear Regression models**.
 
+GitHub Repository: https://github.com/basti394/StatistikProjekt
+
 ## Repository Structure
 The analysis is divided into five sequential notebooks. Please run them in the following order to ensure data dependencies are met.
 
@@ -44,3 +46,24 @@ The analysis is divided into five sequential notebooks. Please run them in the f
 2.  Install dependencies: `pip install pandas numpy scipy seaborn matplotlib statsmodels scikit-posthocs scikit-learn`
 3.  Run `01_Data_Preparation_and_EDA.ipynb` first to generate the pickle file.
 4.  Run notebooks 02 through 05 in order.
+
+
+## Administrative Information
+
+### Table of Contributions
+
+| Member | Contribution |
+| :--- | :--- |
+| **Sebastian** | **Core Analysis:** Architecture of the analysis pipeline, Implementation of statistical models (Regression, Hypothesis Testing), Advanced Validation (Bootstrapping, Model Diagnostics), Final Code Refactoring. |
+| **Keanu** | **Exploration & Interpretation:** Initial Data Preparation & Exploratory Data Analysis (Notebook 01), Economic background research & interpretation of findings, Creation of the final presentation slides, Documentation review. |
+
+#### AI Usage Declaration
+The following prompts were used with the AI model **Gemini 3** to assist in coding, debugging, and methodological selection, specifically for techniques extending beyond the lecture material.
+
+| Context / Task | Prompt Used (Approximation) |
+| :--- | :--- |
+| **Method Selection (Notebook 02)** | "I have non-normally distributed GDP growth data and want to compare 4 countries. Which post-hoc test should I use after a significant Kruskal-Wallis test to identify specific group differences?" |
+| **Correlation Analysis (Notebook 03)** | "How do I calculate a Spearman correlation matrix in Python and apply the Benjamini-Hochberg (FDR) correction to the p-values to adjust for multiple testing?" |
+| **Model Diagnostics (Notebook 05)** | "What are the key assumptions for OLS regression with time-series data? Explain the Durbin-Watson test for autocorrelation and how to implement the Shapiro-Wilk test for residuals in statsmodels." |
+| **Robustness Check (Notebook 05)** | "My dataset is relatively small ($N<50$). How can I use Bootstrapping to calculate robust confidence intervals for my regression coefficients? Please provide a Python code example." |
+| **Documentation** | "Create a structure for a professional Data Science README.md that summarizes 5 sequential Jupyter Notebooks and makes the results understandable for business stakeholders." |
